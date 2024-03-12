@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+img{
+    object-fit: cover;
+}
+nav,.Overview,.header,.cards,.place,.QuestionContainer,.reviews,.form,.footer,.view{
+    width: 90%;
+    margin: auto;
+ }
+body,html{
+    width: 100%;
+    background-color: #e9e7e7;
+}
+.bigScreen{
+    display: none;
+}
+
+nav{
+    padding-top: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #1D1D1D;
+}
+p{
+    text-align: justify;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Cardo", serif;
+    line-height: 1;
+}
+/* nav */
+nav{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggleBtn{
+    border: none;
+    font-size: 1.5rem;
+}
+.ContactBtn{
+    padding: .5rem 1.75rem;
+    font-size: .75rem;
+    font-weight:900;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.ContactBtn:hover{
+    color:white;
+    background: #1D1D1D;
+}
+/* Overview */
+.OverviewContainer{
+    width: 100%;
+    padding-bottom: 4rem;
+}
+.Overview{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.contentContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 1rem;
+}
+.Overview .heading{
+    padding-bottom: 1rem;
+}
+.Overview .heading h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+.imageContainer img{
+    width: 100%;
+    object-fit: cover;
+}
+.Overview  .content p{
+    font-size: .85rem;
+}
+.Overview  .content{
+    padding-top: .75rem;
+    padding-bottom: 1.5rem;
+}
+.ticketBtn{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .75rem 2rem;
+    font-weight: 900;
+    z-index: 2;
+}
+.ticketBtn:hover,.travelBtn:hover,.submitBtn:hover{
+   transform: scale(1.1);
+}
+.travelBtn:hover{
+    background: white;
+    color:#1D1D1D;
+}
+/* Travel Blog */
+.travelBlog{
+    position: relative;
+    background-color: #1D1D1D;
+    color: white;
+    padding: 2rem;
+
+}
+.travelBlog .header{
+    color: white;
+    text-align: center;
+}
+.travelBlog .header .heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.travelBlog .header  .details {
+    font-size: .7rem;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+}
+.travelBlog .header .details p{
+    text-align: center;
+}
+.travelBtn{
+   color: white;
+   background:none;
+   border: 2px solid white;
+   border-radius: 4px;
+   padding: .75rem 2.5rem;
+   font-weight: 800;
+}
+.travelBlog .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.travelcards{
+    position: relative;
+    padding-bottom: 7.75rem
+}
+.travelcards .card{
+    width: 70%;
+}
+.cards{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.travelcards .card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card .content .heading{
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+}
+.card .content .details{
+    text-align:left;
+    font-size: .75rem;
+    font-weight: 490;
+    padding-top: .5rem;
+}
+.horizontalLine{
+    height: 2.5px;
+    width: 14%;
+    background-color: #232323;
+     margin:.5rem 0;
+}
+/* Absolute Position Images */
+.scribble{
+    position: absolute;
+}
+.scribble_dark_6{
+    left: 0;
+    top: 0;
+    height: 34rem;
+}
+.scribble_dark_5{
+   right: 0;
+   bottom: 0;
+   width: 3rem;
+   height: 19rem
+}
+.scribble_light_3{
+    width: 28%;
+    top: 13%;
+    left: 0;
+    height: 8rem;
+    /* width: 26rem; */
+} 
+.scribble_light_2{
+    width: 28%;
+    right: 0;
+    bottom: 2rem;
+    /* width: 27rem  */
+}
+.scribble_lightest{
+    top: 0;
+  right: 0;
+  height: 40rem;
+    width: 12rem 
+}
+.scribble_lightest_2{
+    bottom: 0;
+    height: 24rem;
+    width: 29rem;
+}
+.scribble_dark_7{
+    bottom: 0;
+    right: 0;
+    height: 20rem;
+
+}
+.scribble_light{
+    width: 19rem;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+}
+
+.scribble_light_3{
+    top: 13%;
+    left: 0;
+    height: 8rem;
+    width: 26rem;
+} 
+.scribble_light_2{
+    right: 0;
+    bottom: 2rem;
+    width: 27rem 
+}
+.scribble_dark{
+    bottom: 30px;
+    left: 0;
+    width: 16rem 
+}
+.scribble_dark_2{
+    top: 0;
+    left: 0;
+    height: 7rem;
+}
+.scribble_dark_3{
+    bottom: 3rem;
+    right: 0;
+    height: 3.5rem;
+}
+.scribble_dark_4{
+    bottom: 12rem;
+    left: 0;
+}
+
+/* Places */
+.placeContainer .headerContainer{
+    position: relative;
+    text-align: center;
+  
+  }
+  .placeContainer .headerContainer .header{
+      padding-top: 6rem;
+      padding-bottom: 13.5rem;
+      position: relative;
+  }
+  
+  .airplace_icon{
+      width: 3rem;
+  }
+  .placeContainer .headerContainer .header .heading{
+      font-size: 2.5rem;
+      padding-top: 1rem;
+  }
+  .placeContainer .headerContainer .header p{
+      padding-top: 1rem;
+      font-weight: 700;
+      font-size: .75rem;
+      text-align: center;
+  }
+  .italic{
+      border-bottom: 2px solid #000;
+  }
+  .place{
+      padding-bottom: 2.5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .place .big{
+      width: 100%;
+      height: 20rem;
+  }
+  .place .mobile{
+    padding-bottom: 1.5rem;
+  }
+  .place .content{
+      width: 100%;
+      padding-top: 2rem;
+      
+  }
+  .place .content img{
+      width: 100%;
+      object-fit: cover;
+  }
+  .place .contentContainer{
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .place  h3{
+      line-height: 1;
+      font-size: 1.7rem;
+      /* text-decoration: underline; */
+      text-decoration-thickness: 2px;
+  }
+  .paraSpace{
+      padding-bottom: .5rem;
+  }
+  .place .content .details{
+      font-size: .85rem;
+  }
+  /* View */
+  .view{
+    position: relative;
+    padding: 3rem 0;
+    background-color:#1D1D1D;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+  }
+  .viewContainer{
+      background:#1D1D1D;
+      position: relative;
+  }
+ .view {
+    color:#e9e7e7;
+
+ }
+ .view  .heading{
+    font-size: 2.25rem;
+    line-height: 1;
+    padding-bottom: 2.5rem;
+ }
+ .view .img{
+    /* width: 59%; */
+ }
+ .view .content .details h5{
+    font-size: 1.2rem;
+    padding-bottom: .75rem;
+    padding-top: 2rem;
+ }
+ .view .content .details p{
+    font-size: .75rem;
+    font-weight: 300;
+ }
+/* Question */
+ .QuestionContainer{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+ }
+
+ .QuestionContainer img{
+    height: 25rem;
+    width: 100%;
+ }
+ .QuestionContainer  .heading{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+ }
+ .plus{
+    padding-right: 5px;
+ }
+ .ques{
+    font-size: .6rem;
+ }
+ .Questions{
+    padding-top: 4.45rem;
+ }
+ .question{
+    padding: .85rem 0;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .question:nth-child(1){
+     border-top: 2px solid black;
+ }
+
+ /* Review */
+ .reviews .heading{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0;
+ }
+
+ .reviewContainer{
+    padding-bottom: 6rem;
+    position: relative;
+ }
+ .reviewCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+ }
+.reviewCard{
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding:2rem 1rem;
+}
+.reviewCard h5{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: .75rem;
+
+}
+.reviewCard .content p{
+    font-size: .85rem;
+}
+
+/* Form  */
+.form input{
+    padding: 0.45rem 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: none;
+    padding-left: 10px;
+    margin: .75rem 0;
+}
+.form form{
+    width: 100%;
+}
+.formContainer{
+    padding-bottom: 6rem;
+  
+}
+.form{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.form textarea{
+    background: none;
+    margin-top: .7rem;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid black;
+}
+.form img{
+    height: 27.56rem;
+    width: 100%;
+}
+.form input::placeholder,textarea::placeholder{
+    font-size: .75rem;
+}
+.form h4{
+    font-size: 2.25rem;
+    padding: 1.5rem 0;
+}
+.submitBtn{
+    width: 100%;
+    background-color: #1D1D1D;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: .75rem 0;
+    margin-top: 2rem;
+}
+/* Footer */
+.footerContainer{
+    background-color: #C5C5C5;
+    position: relative;
+}
+.footerContainer .heading{
+   font-size: 1.5rem;
+}
+.footerContent{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+.footer .quickLinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.footer  h4{
+    padding: 1rem 0;
+}
+
+.quickLinksContainer h1{
+    font-weight: 900;
+}
+.footer p{
+   color: #1D1D1D;
+   padding-top: 3rem;
+   padding-left: 1rem;
+   padding-bottom: 3rem;
+   text-align: center;
+}
+.link1,.link2,.link3,.link4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+button{
+    cursor: pointer;
+}
+ /* Arrow */
+ .arrowContainer{
+    position: absolute;
+    bottom: 6rem;
+    right: 0;
+}
+.arrow{
+    position: relative;
+    width: 100px;
+    background: black;
+    height: 2px;
+  }
+  .slash{
+    width: 30px;
+     background: black;
+    height: 2px;
+    position:absolute;
+    right: 0;
+    transform-origin: bottom right;
+  }
+  .slashOne{
+    transform: rotate(40deg);
+  }
+  .slashTwo{
+    transform: rotate(-40deg);
+  }
+@media screen and (min-width:420px) {
+    nav,.Overview,.header,.cards,.place,.QuestionContainer,.reviews,.form,.footer,.view{
+        width: 80%;
+     }
+}
+@media screen and (min-width:720px) {
+    .mobile{
+        display:none;
+        height: 0;
+    }
+    .bigScreen{
+        display: block;
+    }
+
+    nav{
+        padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .links a{
+        padding-right: 4rem;
+        text-decoration: none;
+        font-size:.85rem ;
+        color: black;
+        font-weight: 400;
+    }
+     a:hover{
+        font-weight: 800;
+    }
+   
+    .Overview{
+        padding-top: 3.5rem;
+        flex-direction: row;
+        gap: 2rem;
+        /* justify-content: space-between; */
+    }
+    .topSection{
+        display: flex;
+        justify-content: end;
+        height: 100%;
+    }
+    .contentContainer{
+        display: flex; 
+        width: 45%;
+        flex-direction: column-reverse;
+        align-items:baseline;
+    }
+    .imageContainer{
+        width: 100%;
+        height:100%;
+    }
+    nav,.Overview,.header,.cards,.place,.QuestionContainer,.reviews,.form,.footer{
+        width: 85%;
+        margin: auto;
+     }
+    .Overview .imageContainer img{
+         width: 100%;
+         /* height: 100%; */
+    }
+    .Overview .heading h3{
+        font-size: 4.5rem;
+        font-weight: 900;
+        padding-bottom: 0;
+    }
+    .Overview .details .content p{
+        font-size: .93rem;
+    }
+    .Overview .details .content{
+        padding-top: .75rem;
+        padding-bottom: 1.5rem;
+    }
+    .Overview .content{
+        padding-top: 0;
+    }
+    .OverviewContainer{
+        position: relative;
+        padding-bottom: 8rem;
+    }
+    .travelBlog{
+        position: relative;
+        padding: 2rem;
+    
+    }
+    .travelBlog .header .heading {
+        font-size: 2.5rem;
+    }
+    .travelBlog .header  .details {
+        font-size: .7rem;
+        padding-top: .5rem;
+        padding-bottom: 1.5rem;
+    }
+    /* images */
+    .scribble_dark_6{
+        left: 0;
+        top: 0;
+        height: 34rem;
+   }
+   .scribble_dark_5{
+       right: 0;
+       bottom: 0;
+       width: 4rem;
+       height: 19rem
+   }
+    /* Travel Blog cards */
+.travelcards{
+    position: relative;
+    padding-bottom: 7.75rem
+}
+.travelcards .card{
+    width: 29%;
+
+}
+.cards{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  
+  .airplace_icon{
+      width: 4rem;
+  }
+  .placeContainer .headerContainer .header .heading {
+      font-size: 3.5rem;
+      padding-top: 1rem;
+  }
+  .placeContainer .headerContainer .header{
+    padding-bottom: 18rem;
+  }
+  .placeContainer .headerContainer .header p{
+      padding-top: 1.5rem;
+      font-weight: 700;
+      font-size: .95rem;
+  }
+  .italic{
+      border-bottom: 2px solid #000;
+  }
+  .place{
+      padding-bottom: 2.5rem;
+      position: relative;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items:normal;
+      justify-content: space-between;
+  }
+  .place .big{
+      width: 45%;
+      height: 100%;
+  }
+  .place .content{
+      width: 50%;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+  }
+  .place .content img{
+    width: 80%;
+
+  }
+  .place .contentContainer{
+      padding-top: 2rem;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+  .place .content .Heading{  
+      width: 40%;
+  }
+  .place .content .Heading h3{
+      line-height: 1.5;
+      font-size: 2rem;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+  }
+  .paraSpace{
+      padding-bottom: 1.5rem;
+  }
+  .place .content .details{
+      font-size: .9rem;
+      width: 55%;
+      text-align: justify;
+  }
+  /* View  */
+  .view{
+    padding-left: 7rem;
+    padding: 0;
+    width: 100%;
+    margin-left: 7.5%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+ .view .content{
+    width: 35%;
+    color:#e9e7e7;
+ }
+ .view .content .heading{
+    font-size: 3rem;
+    line-height: 1;
+    padding-bottom: 2.5rem;
+ }
+ .view .img{
+    width: 59%;
+    object-fit: contain;
+    height: 27rem;
+ }
+ .view .content .details h5{
+    font-size: 1.2rem;
+    padding-bottom: .75rem;
+    padding-top: 2rem;
+ }
+ .view .content .details p{
+    font-size: .9rem;
+    font-weight: 300;
+ }
+ /* Question */
+ .QuestionContainer{
+    padding: 6rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .QuestionContainer img{
+    height: 25.875rem;
+    width: 23rem;
+ }
+ .QuestionContainer .content .heading{
+    font-size: 3.5rem;
+ }
+ .ques {
+    font-size: .9rem;
+ }
+ .Questions{
+    padding-top: 4.45rem;
+ }
+
+ .plus{
+    padding-right: 1rem;
+ } 
+ .reviews .heading{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0;
+ }
+ .reviewContainer{
+    padding-bottom: 6rem;
+    position: relative;
+ }
+ .leftArrow,.rightArrow{
+    position: absolute;
+    transform: translate(0,-25%);
+    padding: .25rem .75rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 2;
+    background: #e9e7e7;
+   
+ }
+ .rightArrow{
+    top: 50%;
+    left: 3.5rem;
+ }
+ .leftArrow{
+    top: 50%;
+    right: 3.5rem;
+ }
+ .leftArrow img,.rightArrow img{
+    width: 50px;
+    height: 50px;
+ }
+ .reviewCardContainer{
+   flex-direction: row;
+    justify-content: space-between;
+ }
+.reviewCard{
+    width: 32%;
+}
+.reviewCard h5{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: .75rem;
+
+}
+.reviewCard .content p{
+    font-size: .85rem;
+}
+
+.form form{
+    width: 30%;
+}
+.formContainer{
+    padding-bottom: 6rem;
+  
+}
+.form{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form img{
+    height: 31.4rem;
+    width: 63%;
+}
+
+.form h4{
+    font-size: 3rem;
+    padding-top: 0;
+}
+
+/* Footer */
+.footerContainer{
+    background-color: #C5C5C5;
+    position: relative;
+}
+.footerContainer .heading{
+   font-size: 1.5rem;
+}
+.footerContent{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+.footer .quickLinks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+.footer  h4{
+    padding-bottom: 1.5rem;
+}
+
+.quickLinksContainer h1{
+    font-weight: 900;
+}
+.footer p{
+   color: #1D1D1D;
+   padding-top: 3rem;
+   padding-left: 1rem;
+   padding-bottom: 3rem;
+   text-align: center;
+}
+.link1,.link2,.link3,.link4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+button{
+    cursor: pointer;
+}
+}
