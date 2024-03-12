@@ -282,8 +282,8 @@ nav{
   
   }
   .placeContainer .headerContainer .header{
-      padding-top: 6rem;
-      padding-bottom: 13.5rem;
+      padding-top: 3rem;
+      padding-bottom: 8rem;
       position: relative;
   }
   
@@ -542,12 +542,16 @@ nav{
 .footerContent{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding-top: 2rem;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 .footer .quickLinks{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
 }
@@ -736,6 +740,7 @@ button{
   }
   .placeContainer .headerContainer .header{
     padding-bottom: 18rem;
+    padding-top: 6rem;
   }
   .placeContainer .headerContainer .header p{
       padding-top: 1.5rem;
@@ -935,13 +940,17 @@ button{
 .footerContent{
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row ;
     padding-top: 4rem;
     justify-content: space-between;
+    text-align: left;
 }
 .footer .quickLinks{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 6rem;
+
 }
 .footer .quickLinks a{
     font-size: 1rem;
