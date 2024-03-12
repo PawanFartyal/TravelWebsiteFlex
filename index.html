@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/284c60d4fa.js" crossorigin="anonymous"></script>
+    <script src="./app.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div class="links">
+        <button class="mobile toggleBtn toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="links bigScreen">
             <a href="">Home</a>
             <a href="">Guides</a>
             <a href="">Flights</a>
@@ -17,27 +21,44 @@
         </div>
         <button class="ContactBtn">Contact Us</button>
     </nav>
+    <div class="sidebar mobile" id='sidebar'>
+        <ul>
+          <li><a href="">Home</a></li>
+           <li><a href="">Guides</a></li>
+            <li><a href="">Flights</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <button class="close">
+            <img src="./images/close.png" alt="">
+        </button>
+      </div>
     <section class="OverviewContainer"> 
         <div class="Overview">
-            <div class="details">
-                <div class="heading">
-                    <h3>Travel to</h3>
-                    <h3>your dream</h3>
-                    <h3>destination</h3>
-                </div>
-                <div class="content">
+            <div class="contentContainer">
+                <button class="ticketBtn">Reserve Ticket</button>
+                <div class="content bigScreen">
                     <p>Lorem ipsum sit amet, consectetur adipi scing elit, sed do</p>
                     <p>eiusmod tempor incididunt u labore dolore magna aliqua.</p>
                     <p>Quis ipsum sus pendisse ultrices gravida.</p>
                 </div>
-                <button class="ticketBtn">Reserve Ticket</button>
+                <div class="content mobile">
+                    <p>Lorem ipsum sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt u labore dolore magna aliqua Quis ipsum sus pendisse ultrices gravida.</p>
+                </div>
+                <div class="heading bigScreen">
+                    <h3>Travel to your dream destination</h3>
+                </div>
             </div>
-            <div class="imageContainer">
-                <img src="./images/place_your_image_here_dou_9.jpg" alt="mountain view">
-            </div>
+            <div class="topSection">
+                <div class="heading mobile">
+                    <h3>Travel to your dream destination</h3>
+                </div>
+                <div class="imageContainer">
+                    <img src="./images/place_your_image_here_dou_9.jpg" alt="mountain view">
+                </div>
+                </div>
         </div>
-        <img src="./images/scribble_lightest_2.png" class="scribble_lightest_2 scribble" alt="">
-        <img src="./images/scribble_dark_7.png" class="scribble_dark_7 scribble" alt="">
+        <img src="./images/scribble_lightest_2.png" class="scribble_lightest_2 scribble bigScreen" alt="">
+        <img src="./images/scribble_dark_7.png" class="scribble_dark_7 scribble bigScreen" alt="">
     </section>
     <section class="travelBlogContainer">
         <div class="travelBlog">
@@ -46,16 +67,21 @@
                     <h4>Create a memory</h4>
                     <h4>to remember</h4>
                 </div>
-                <div class="details">
+                <div class="details mobile">
+                    <p>Lorem ipsum dolar sit amet,consectetur adipi scing elit,set do ei usmod tempor incididunt ut labore et dolore megna aliwua Quis ipsum sus pendisse ultrices gravida</p>
+                </div>
+                <div class="details bigScreen">
                     <p>Lorem ipsum dolar sit amet,consectetur adipi scing elit,set do ei</p>
                     <p>usmod tempor incididunt ut labore et dolore megna aliwua Quis</p>
                     <p>ipsum sus pendisse ultrices gravida</p>
                 </div>
                 <button class="travelBtn">My Travel Logs</button>
             </div>
-            <img src="./images/scribble_light_3.png"  class="scribble_light_3 scribble">
-        <img src="./images/scribble_light_2.png" alt="" class="scribble_light_2 scribble">
+            <img src="./images/scribble_light_3.png"  class="scribble_light_3 scribble bigScreen">
+        <img src="./images/scribble_light_2.png" alt="" class="scribble_light_2 scribble bigScreen">
         </div>
+         </section>
+         <section class="travelCardsContainer">
         <div class="travelcards">
             <div class="cards">
             <div class="card firstCard">
@@ -108,24 +134,22 @@
                 <img src="./images/airplace_icon.png"  class="airplace_icon">
                 <div class="heading">
                     <h3>See places you've</h3>
-                    <h3><i class="italic">never</i> been before</h3>
+                    <h3><em class="italic">never</em> been before</h3>
                 </div>
                 <p>Lorem Ipsum Dolor | Lorem Ipsum Dolor | Lorem Ipsum Dolor</p>
-                <img src="./images/scribble_dark_4.png" class="scribble_dark_4 scribble" alt="">
+                <img src="./images/scribble_dark_4.png" class="scribble_dark_4 scribble bigScreen" alt="">
             </div>
-            <img src="./images/scribble_lightest.png"  class="scribble_lightest scribble">
+            <img src="./images/scribble_lightest.png"  class="scribble_lightest scribble bigScreen">
         </div>
         <div class="place">
+            <h3 class="mobile">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do ei</h3>
             <img src="./images//place_your_image_here_dou_5.jpg" class="big" alt="">
+            <img src="./images/tape.png" class="bigScreen scribble tape" alt="">
             <div class="content">
                 <img src="./images/place_your_image_here_dou_7.jpg" class="small" alt="">
                 <div class="contentContainer">
                     <div class="Heading">
-                        <h3>Lorem ipsum</h3>
-                        <h3>dolor sit amet</h3>
-                        <h3>consectetur</h3>
-                        <h3>adipiscing elit</h3>
-                        <h3>sed do ei</h3>
+                        <h3 class="bigScreen">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do ei</h3>
                     </div>
                     <div class="details">
                         <p class="paraSpace">Lorem ipsum dolor sit ametm,consectetur adip isicing eli,set do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud</p>
@@ -133,21 +157,22 @@
                     </div>
                 </div>
             </div>
-            <div class="arrowContainer">
+            <div class="arrowContainer bigScreen">
                 <div class="arrow">
-                    <div class="slash slashOne">
-                    <div class="slash slashTwo">
+                    <div class="slash slashOne"> </div>
+                    <div class="slash slashTwo">  </div>
                     </div>
             </div>
         </div>
     </section>
-    <section class="view">
-        <div class="content">
-            <div class="heading">
-                <h4>Choose anywhere </h4>
-                <h4>you'd like to be</h4>
-            </div>
-            <div class="details">
+    <section class="viewContainer">
+        <div class="view">    
+            <div class="content">
+                <div class="heading bigScreen">
+                    <h4>Choose anywhere </h4>
+                    <h4>you'd like to be</h4>
+                </div>
+                <div class="details">
                 <h5>Lorem Ipsum dolor</h5>   
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do ei usmod temoir incididunt ut labore et dolore magna aloqua.Ut enim ad minim veniam,wuis nistrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in repre henderit in voluptate velit esse.</p>             
             </div>
@@ -157,11 +182,16 @@
             </div>
         </div>
         <img src="./images/place_your_image_here_dou_8.png" class="img" alt="">
-        <img src="./images/scribble_light.png" class="scribble_light scribble" alt="">
+        <div class="heading mobile">
+            <h4>Choose anywhere </h4>
+            <h4>you'd like to be</h4>
+        </div>
+         </div>
+        <img src="./images/scribble_light.png" class="scribble_light scribble bigScreen" alt="">
     </section>
     <section class="QuestionContainer">
         <div class="content">
-               <div class="heading">
+               <div class="heading bigScreen">
                   <h3>Lorem ipsum dolor</h3>
                   <h3>sit amet consectetur</h3>
                </div>
@@ -199,46 +229,50 @@
             </div>
         </div>
         <img src="./images/place_your_image_here_dou_2.jpg" class="" alt="">
+        <div class="heading mobile">
+            <h3>Lorem ipsum dolor </h3>
+             <h3>sit amet consectetur</h3>
+         </div>
     </section>
     <section class="reviewContainer">
-           <img src="./images/scribble_dark_2.png" class="scribble_dark_2 scribble" alt="">
+           <img src="./images/scribble_dark_2.png" class="scribble_dark_2 scribble bigScreen" alt="">
             <div class="reviews">
                 <div class="heading">
                     <h4>Here's what they</h4>
                     <h4>have to say...</h4>
                 </div>
                 <div class="reviewCardContainer">
+                    <div class="rightArrow bigScreen">
+                        <img src="./images/back.png" alt="">
+                    </div>
                     <div class="reviewCard">
                       <img src="./images/ellipse.png" alt="">
                       <h5>Customer Name</h5>
                       <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur</p>
-                        <p>adipiscing elit, set do ei usmod tempor incid</p>
-                        <p>idunt ut labore et dolore magna aliqua</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, set do ei usmod tempor incid idunt ut labore et dolore magna aliqua</p>
                       </div>
                     </div>
                     <div class="reviewCard">
                         <img src="./images/ellipse.png" alt="">
                         <h5>Customer Name</h5>
                         <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur</p>
-                          <p>adipiscing elit, set do ei usmod tempor incid</p>
-                          <p>idunt ut labore et dolore magna aliqua</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, set do ei usmod tempor incid idunt ut labore et dolore magna aliqua</p>
                         </div>
                       </div>
                       <div class="reviewCard">
                         <img src="./images/ellipse.png" alt="">
                         <h5>Customer Name</h5>
                         <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur</p>
-                          <p>adipiscing elit, set do ei usmod tempor incid</p>
-                          <p>idunt ut labore et dolore magna aliqua</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, set do ei usmod tempor incid idunt ut labore et dolore magna aliqua</p>
                         </div>
+                      </div>
+                      <div class="leftArrow bigScreen">
+                        <img src="./images/next.png" alt="">
                       </div>
                 </div>
                 
             </div>
-            <img src="./images/scribble_dark_3.png" class="scribble_dark_3 scribble" alt="">
+            <img src="./images/scribble_dark_3.png" class="scribble_dark_3 scribble bigScreen" alt="">
     </section>
     <section class="formContainer">
         <div class="form">
@@ -250,7 +284,7 @@
                 <textarea name="" id="" cols="33" rows="10" placeholder="Write something here..."></textarea>
                 <button class="submitBtn">Submit Email</button>
             </form>
-            <img src="./images/place_your_image_here_dou.jpg" alt="">
+            <img src="./images/place_your_image_here_dou.jpg" alt=""/>
         </div>
     </section>
     <footer class="footerContainer">
@@ -288,7 +322,7 @@
     </div>
         <p>2021-2022 My Log Travels All Rights Reserved.</p>
         </div>
-        <img src="./images/scribble_dark.png" class="scribble_dark scribble" alt="">
+        <img src="./images/scribble_dark.png" class="scribble_dark scribble bigScreen" alt="">
     </footer>
 </body>
 </html>
