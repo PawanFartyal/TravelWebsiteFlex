@@ -306,7 +306,7 @@ nav{
     transition: all  2s ;
     top: 0;
     left: -450px;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
     height: 100vh;
     background-color: #e9e7e7;
@@ -403,9 +403,6 @@ nav{
     font-size: 2.25rem;
     line-height: 1;
     padding-bottom: 2.5rem;
- }
- .view .img{
-    /* width: 59%; */
  }
  .view .content .details h5{
     font-size: 1.2rem;
