@@ -53,6 +53,7 @@ nav{
 }
 .toggleBtn{
     border: none;
+    background: transparent;
     font-size: 1.5rem;
 }
 .ContactBtn{
@@ -98,7 +99,7 @@ nav{
     font-size: .85rem;
 }
 .Overview  .content{
-    padding-top: .75rem;
+    padding-top: .75rem;   
     padding-bottom: 1.5rem;
 }
 .ticketBtn{
@@ -109,8 +110,8 @@ nav{
     font-weight: 900;
     z-index: 2;
 }
-.ticketBtn:hover,.travelBtn:hover,.submitBtn:hover{
-   transform: scale(1.1);
+.ticketBtn:hover,.travelBtn:hover,.submitBtn:hover,a:hover,.ContactBtn:hover{
+   scale: 1.1;
 }
 .travelBtn:hover{
     background: white;
@@ -156,7 +157,7 @@ nav{
 }
 .travelcards{
     position: relative;
-    padding-bottom: 7.75rem
+    padding-bottom: 1.75rem
 }
 .travelcards .card{
     width: 100%;
@@ -282,8 +283,8 @@ nav{
   
   }
   .placeContainer .headerContainer .header{
-      padding-top: 3rem;
-      padding-bottom: 8rem;
+          padding-top: 3rem;
+      padding-bottom: 4rem;
       position: relative;
   }
   
@@ -301,15 +302,18 @@ nav{
       text-align: center;
   }
   .sidebar {
-    position: absolute;
+    position: fixed;
+    transition: all  2s ;
     top: 0;
+    left: -450px;
+    width: 50%;
     padding: 1rem;
-    width: 100vw;
     height: 100vh;
     background-color: #e9e7e7;
     display: flex;
-    display: none;
+    visibility: hidden;
     justify-content: space-between;
+    z-index: 99;
   }
 
   .sidebar li{
@@ -317,7 +321,10 @@ nav{
      padding: .75rem;
      
   }
+
   .showSidebar{
+    left: 0;
+    visibility: visible;
     display: flex;
   }
   .close{
@@ -608,15 +615,25 @@ button{
   .slashTwo{
     transform: rotate(-40deg);
   }
+
+@media screen and (max-width:720px){
+    h3,h4{
+        text-align: center;
+    }
+    .card .content .heading h4{
+        text-align: left;
+    }
+}
+
 @media screen and (min-width:420px) {
     nav,.Overview,.header,.cards,.place,.QuestionContainer,.reviews,.form,.footer,.view{
         width: 80%;
      }
 }
+
 @media screen and (min-width:720px) {
     .mobile{
         display:none;
-        height: 0;
     }
     .bigScreen{
         display: block;
